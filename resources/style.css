@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*general styles*********************/
+
+/*Colors:
+blue: #2796ea
+dark blue: #134B75
+orange: #EA7B27
+orange:hover: #D05304
+beige: #F4EFE5*
+***/
+
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+body {
+  line-height: 1.2;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 2000px;
+  
+}
+main {
+  margin: 0 auto;
+  text-align: center;
+}
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 1.778rem 1.333rem;
+  flex-wrap: wrap;
+}
+.left{
+  width: 60%;
+  flex: 2;
+  margin-right: 1.333rem;
+  text-align: left;
+}
+.right{
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.mobile{
+  display: none;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: black; 
+}
+h2{
+  font-size: 2.25rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+h3{
+  font-size: 1.25rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: nomal;
+}
+/*general styles tablet *********/
+@media only screen and (max-width:768px){
+.container{
+  flex-flow: column;
+  padding: 1.778rem 0.8889rem;
+  }
+.left{
+  width:100%;
+  }
+.right{
+  width: 100%;
+  }
+h1{
+  font-size: 2.5rem;
+}
+}
+/*general styles mobile *********/
+@media only screen and (max-width:480px){
+  .container{
+    padding:0 0.889rem; 
+  }
+  h1{
+    font-size: 2.25rem;
+  } 
+  h2{
+    font-size: 1.8rem;
+  }
+  h3{
+    font-size: 1.1
+      rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+}
+/*header***************************/
+header {
+  width: 100%;
+  background-color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  width: auto;
+  height: 3rem;
+  padding-right: 1rem;
+}
+.logo span{
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 700;
+}
+header nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: black;
+  padding-right: 0rem;
+}
+
+/*header tablet styles*/
+@media only screen and (max-width:768px){
+.desktop{
+    display: none;
+  }
+.mobile{
+    display: inline-block;
+  }
+}
+/*header mobile sizes*/
+@media only screen and (max-width:480px){
+.logo{
+  width: 30%;
+  }
+.logo img{
+  height: 2rem;
+  }
+.logo h3{
+  display: none;
+  }
+.mobile{
+  width:70%;
+  display: block;
+  }
+header .mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  }
+header .mobile li {
+  padding: 0;
+  }
+}
+
+/*banner****************************************/
+.banner h1{
+  color: white;
+}
+.banner-text p {
+  font-size: 1.75rem;
+  font-weight:400;
+  color: white;
+  margin-top: 2rem;
+  font-family: 'Raleway', sans-serif;
+}
+.container.banner{
+  background-color: #2796ea;
+}
+.button{
+  padding: 0.4444rem;
+  background-color:#EA7B27;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 3rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.button:hover{
+  background-color: #D05304;
+}
+
+/*banner tablet sizes*/
+@media only screen and (max-width:768px){
+h1{
+  margin: 32px 0;
+}
+}
+/*banner mobile sizes*/
+@media only screen and (max-width:480px){
+.banner-text p{
+  font-size: 1.25rem;
+  margin-top: 1.333rem;
+  } 
+.button{
+  margin: 24px 0;
+  }
+}
+
+/*information section*************************/
+.information .right{
+  justify-content: flex-start;
+  background-color:#F4EFE5;
+}
+.info-text-main h2{
+  margin-top:32px;
+}
+.info-text-main p{
+  padding: 1.333rem 0;
+}
+.quote {
+  font-size: 1rem;
+}
+.info-box{
+  max-width: 100%;
+  height: auto;
+  padding: 0.8889rem;
+  display: flex;
+  justify-content: space-between;
+}
+.info-box .image-container{
+  max-width: 35%;
+}
+.image-mobile{
+  display: none;
+}
+.info-text-content{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-text-content p{
+  padding: 0.4444rem 0;
+}
+.info-text-content a{
+  color: #EA7B27;
+  font-weight:700;
+  font-size: 1rem;
+}
+.info-text-content a:hover{
+  color: #D05304;
+}
+
+
+/*information mobile sizes**********************/
+@media only screen and (max-width:480px){
+.information {
+  margin-top: 0.8889rem;
+  }
+.information .left{
+  display: none;
+  }
+.information .right{
+  background-color: white;
+  }
+.info-box{
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 64px;
+  padding:0;
+  }
+.info-box .image-container{
+  max-width: 100%;
+  }
+.image-desktop{
+  display: none;
+  }
+.image-mobile{
+  display: block;
+  }
+.info-text-content{
+  width: 100%;
+  margin-top: 0.889rem;
+}
+}
+
+
+/*courses section**********************/
+#courses{
+  background-color: #2796ea;
+  text-align: center;
+  height: auto;
+}
+#courses h2{
+  color: white;
+  padding: 32px 0;
+}
+#courses p{
+  margin-top: 0.4444rem;
+}
+.courses-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2.222rem;
+}
+.course-item{
+  background-color: white;
+  width: 25%;
+  height: auto;
+  margin: 0 1.778rem 1.778rem 1.778rem;
+}
+.courses-text-content{
+  padding: 0.8889rem 0.8889rem 1.333rem 0.8889rem;
+  text-align: left
+}
+.link a:hover{
+  color:#EA7B27;
+}
+.course-item:hover{
+  background-color: #F4EFE5;
+}
+
+/*courses tablet sizes*/
+@media only screen and (max-width:768px){
+  #courses{
+    padding: 0;
+  }
+.course-item{
+    width: 35%;
+    flex-shrink: 1;
+  }
+}
+
+
+/*courses mobile sizes*/
+@media only screen and (max-width:480px){
+#courses{
+  background-color: white;
+  }
+#courses h2{
+  color: black;
+  padding: 32px 0 16px 0;
+}
+#courses .link a{
+    color: white;
+  }
+#courses .link a:hover{
+   color:#EA7B27;
+  }
+#courses img {
+    display: none
+  }
+.courses-text-content p{
+  display: none;
+  }
+.courses-container {
+  padding: 0 0.8889rem 1.778rem 0.8889rem;
+  }
+.course-item{
+  width:100%;
+  display: block;
+  margin: 0.4444rem 0 0 0;
+  background-color: #2796ea;
+  }
+.course-item:hover{
+  background-color: #134B75;
+}
+}
+
+
+/*exhibit section*************************/
+.container .exhibit{
+  background-color: white;
+  text-align: center;
+}
+.exhibit .right{
+  justify-content: flex-start;
+}
+.exhibit-headline{
+  display: block;
+  padding-top: 32px;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+.exhibit-text-main h3{
+  margin: 1.333rem 0 0.4444rem;
+}
+.exhibit .info-box{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.exhibit .info-box:first-child{
+  border-bottom: 0;
+}
+
+/*exhibit tablet sizes************************/
+@media only screen and (max-width:768px){
+  .exhibit .right{
+    margin-top: 1.778rem;
+  }
+}
+
+/*exhibit mobile sizes************************/
+@media only screen and (max-width:480px){
+.exhibit .right{
+    display: none;
+  }
+.exhibit {
+  padding-bottom: 0;
+  }
+}
+
+/*footer*****************************************/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .75rem;
+  border-top: 1px solid black;
+  margin-top: 1.778rem;
+  padding:0.8889rem 1.333rem;
+  font-weight: 700;
+  background-color: #2796ea;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+}
+footer a {
+  color: white;
+}
+
+/*footer mobile sizes************************/
+@media only screen and (max-width:480px){
+footer{
+  font-size: .5rem;
+  padding: 0.8889rem 0;
+  justify-content: center;
+  margin-top: 1.333rem;
+  }
+footer ul{
+    display: none;
+  }
+}
+
