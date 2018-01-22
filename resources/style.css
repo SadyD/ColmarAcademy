@@ -20,7 +20,7 @@ body {
   line-height: 1.2;
   margin: 0 auto;
   background-color: white;
-  max-width: 2000px;
+  max-width: 1800px;
   
 }
 main {
@@ -90,7 +90,14 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: nomal;
 }
+
 /*general styles tablet *********/
+@media only screen and (max-width: 1024px){
+h1{
+  font-size: 2.5rem;
+  }
+}
+
 @media only screen and (max-width:768px){
 .container{
   flex-flow: column;
@@ -102,10 +109,8 @@ p {
 .right{
   width: 100%;
   }
-h1{
-  font-size: 2.5rem;
 }
-}
+
 /*general styles mobile *********/
 @media only screen and (max-width:480px){
   .container{
@@ -228,6 +233,11 @@ header .mobile li {
 }
 
 /*banner tablet sizes*/
+@media only screen and (max-width: 1024px){
+.banner-text p{
+  font-size: 1.25rem;
+  }
+}
 @media only screen and (max-width:768px){
 h1{
   margin: 32px 0;
@@ -236,7 +246,7 @@ h1{
 /*banner mobile sizes*/
 @media only screen and (max-width:480px){
 .banner-text p{
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   margin-top: 1.333rem;
   } 
 .button{
@@ -246,7 +256,7 @@ h1{
 
 /*information section*************************/
 .information .right{
-  justify-content: flex-start;
+  justify-content: space-between;
   background-color:#F4EFE5;
 }
 .info-text-main h2{
